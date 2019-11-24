@@ -1,4 +1,4 @@
-##Build
+## Build
 
 The plan
 To Dockerize a basic Angular app built with Angular CLI we need to do the following:
@@ -11,29 +11,33 @@ We’ll do this in 2 stages:
 Build stage: will depend on a Node alpine Docker image
 Setup Stage: will depend on NGINX alpine Docker image and use the artifacts from the build stage, and the nginx config from our project.
 
-##Requirements
-* Angular cli
-Package                           Version
------------------------------------------------------------
-@angular-devkit/architect         0.803.19
-@angular-devkit/build-angular     0.803.19
-@angular-devkit/build-optimizer   0.803.19
-@angular-devkit/build-webpack     0.803.19
-@angular-devkit/core              8.3.19
-@angular-devkit/schematics        8.3.19
-@angular/cli                      8.3.19
-@ngtools/webpack                  8.3.19
-@schematics/angular               8.3.19
-@schematics/update                0.803.19
-rxjs                              6.4.0
-typescript                        3.5.3
-webpack                           4.39.2
+## Requirements
 
-* Docker  : Docker version 19.03.5, build 633a0ea
-* Visual Studio Code 
-* Node  v12.10.0
+- Angular cli
+  Package Version
 
-* Nginx
+---
+
+@angular-devkit/architect 0.803.19
+@angular-devkit/build-angular 0.803.19
+@angular-devkit/build-optimizer 0.803.19
+@angular-devkit/build-webpack 0.803.19
+@angular-devkit/core 8.3.19
+@angular-devkit/schematics 8.3.19
+@angular/cli 8.3.19
+@ngtools/webpack 8.3.19
+@schematics/angular 8.3.19
+@schematics/update 0.803.19
+rxjs 6.4.0
+typescript 3.5.3
+webpack 4.39.2
+
+- Docker : Docker version 19.03.5, build 633a0ea
+- Visual Studio Code
+- Node v12.10.0
+
+- Nginx
+
 ```
 server {
 
@@ -65,7 +69,6 @@ server {
 
 ```
 
-##Angular 
+## Angular
 
-
-##Multi-Staged Builds 
+## Multi-Staged Builds

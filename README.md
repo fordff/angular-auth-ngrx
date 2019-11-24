@@ -17,6 +17,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+ng test --browsers ChromeHeadlessNoSandbox --watch=false
 
 ## Running end-to-end tests
 
@@ -70,9 +71,8 @@ You could also group actions and reducers by domain. Actions and reducers would 
 
 Define the state
 Before creating any actions or reducers, let’s define structure of the store in src/app/store/reducers/auth.reducers.ts:
-
+```
 import { User } from '../../models/user';
-
 
 export interface State {
   // is a user authenticated?
@@ -82,20 +82,31 @@ export interface State {
   // error message
   errorMessage: string | null;
 }
+
+```
 Remember: State is a single, immutable data structure.
 
 Also, add an initialState object:
 
+```
 export const initialState: State = {
   isAuthenticated: false,
   user: null,
   errorMessage: null
 };
-Then, define the top-level state interface in src/app/store/app.states.ts:
+```
 
+Then, define the top-level state interface in src/app/store/app.states.ts:
+``
 import * as auth from './reducers/auth.reducers';
 
 
 export interface AppState {
   authState: auth.State;
 }
+```
+
+
+```
+ng test --browsers ChromeHeadlessNoSandbox --watch=false
+```
