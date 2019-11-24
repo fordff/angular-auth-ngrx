@@ -28,6 +28,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 State management is difficult. As your application scales, state generally scatters across your application, tucked away in various nooks and crannies. Although it’s not an issue yet, it’s a good idea to set a solid foundation to help ensure that, going forward, state management is easier and more predictable. This is where NGRX Store comes into play. It helps to solve this problem by managing state in a single, immutable data store.
 
+https://ngrx.io/
+
 Core tenets:
 
 State is a single immutable data structure
