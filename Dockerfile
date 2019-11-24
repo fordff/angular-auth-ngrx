@@ -15,7 +15,7 @@ FROM nginx:1.14.1-alpine
 LABEL version="1.0"
 
 ## Copy our default nginx config
-COPY nginx.conf /etc/nginx/conf.d/
+COPY nginx/default.conf /etc/nginx/conf.d/
 
 ## Remove default nginx website
 RUN rm -rf /usr/share/nginx/html/*

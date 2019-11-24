@@ -5,6 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:dev": "ng build --configuration=dev",
+    "build:prod": "ng build --prod",
     "build:docker": "docker image build -t angular-auth-ngrx .",
     "start:docker": "docker run -p 3000:80 --rm angular-auth-ngrx",
     "test": "ng test",
