@@ -1,8 +1,7 @@
 <div class="row">
   <div class="col-sm-8 col-sm-offset-2 text">
-    <h1><strong>Angular 8</strong> Auth with NGRX</h1>
+    <h1><strong>Angular </strong> Auth / NGRX</h1>
     <div class="description">
-
     </div>
   </div>
 </div>
@@ -11,13 +10,12 @@
     <div class="form-top">
       <div class="form-top-left">
         <h3>Log In</h3>
-        <p>Fill in the form below to send us a message:</p>
+        <!-- <p>Fill in the form below to send us a message:</p> -->
       </div>
       <div class="form-top-right">
-        <i class="fa fa-envelope"></i>
+        <!-- <i class="fa fa-envelope"></i> -->
       </div>
     </div>
-
     <div class="form-bottom contact-form">
       <form (ngSubmit)="onSubmit()" ngNativeValidate>
         <div class="form-group">
@@ -34,25 +32,10 @@
         <a [routerLink]="['/']" class="btn btn-success">Cancel</a>
       </form>
     </div>
-    <div class="row">
-      <div class="col-sm-6 col-sm-offset-3 social-login">
-        <h3>...or login with:</h3>
-        <div class="social-login-buttons">
-          <a class="btn btn-link-1 btn-link-1-facebook" href="#">
-            <i class="fa fa-facebook"></i> Facebook
-          </a>
-          <a class="btn btn-link-1 btn-link-1-twitter" href="#">
-            <i class="fa fa-twitter"></i> Twitter
-          </a>
-          <a class="btn btn-link-1 btn-link-1-google-plus" href="#">
-            <i class="fa fa-google-plus"></i> Google Plus
-          </a>
-        </div>
-      </div>
-    </div>
-    <p>
+    <hr>
+    <h4>
       <span>Don't have an account?&nbsp;</span>
       <a [routerLink]="['/sign-up']">Sign up!</a>
-    </p>
+    </h4>
   </div>
 </div>

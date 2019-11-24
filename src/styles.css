@@ -1,10 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
-@import '~font-awesome/css/font-awesome.css';
-
+@import "~font-awesome/css/font-awesome.css";
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 300;
   color: #888;
@@ -12,24 +11,33 @@ body {
   text-align: center;
 }
 
-strong { font-weight: 500; }
-
-a, a:hover, a:focus {
-color: #e8643e;
-text-decoration: none;
-  -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
+strong {
+  font-weight: 500;
 }
 
-h1, h2 {
-margin-top: 10px;
-font-size: 38px;
+a,
+a:hover,
+a:focus {
+  color: #e8643e;
+  text-decoration: none;
+  -o-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+h1,
+h2 {
+  margin-top: 10px;
+  font-size: 38px;
   font-weight: 100;
   color: #555;
   line-height: 50px;
 }
 
 h3 {
-font-size: 22px;
+  font-size: 22px;
   font-weight: 300;
   color: #555;
   line-height: 30px;
@@ -40,4 +48,79 @@ font-size: 22px;
   margin-top: 40px;
   border: 2px dashed #ddd;
   border-radius: 8px;
+}
+
+.navbar {
+  padding-top: 10px;
+  background: #333;
+  background: rgba(51, 51, 51, 0.3);
+  border: 0;
+  -o-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.navbar.navbar-no-bg {
+  background: none;
+}
+
+ul.navbar-nav {
+  font-size: 16px;
+  color: #fff;
+}
+
+.navbar-inverse ul.navbar-nav li a {
+  color: #fff;
+  opacity: 0.8;
+  border-bottom: 1px solid transparent;
+}
+.navbar-inverse ul.navbar-nav li a:hover {
+  color: #fff;
+  opacity: 1;
+  border-bottom: 1px solid #fff;
+}
+.navbar-inverse ul.navbar-nav li a:focus {
+  color: #fff;
+  outline: 0;
+  opacity: 1;
+  border-bottom: 1px solid #fff;
+}
+
+.navbar-inverse ul.navbar-nav li a.btn-link-2 {
+  height: auto;
+  margin: 4px 0 0 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #fff;
+}
+.navbar-inverse ul.navbar-nav li a.btn-link-2:hover,
+.navbar-inverse ul.navbar-nav li a.btn-link-2:focus,
+.navbar-inverse ul.navbar-nav li a.btn-link-2:active,
+.navbar-inverse ul.navbar-nav li a.btn-link-2:active:focus {
+  outline: 0;
+  opacity: 0.6;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.section-container {
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+.section-container-gray-bg {
+  background: #f8f8f8;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.section-description {
+  margin-top: 60px;
+  padding-bottom: 10px;
+}
+
+.section-description p {
+  margin-top: 20px;
+  padding: 0 120px;
 }
