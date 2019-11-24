@@ -1,6 +1,6 @@
 {
   "name": "angular-auth-ngrx",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -22,6 +22,7 @@
     "@ngrx/effects": "^8.5.2",
     "@ngrx/store": "^8.5.2",
     "bootstrap": "^4.3.1",
+    "font-awesome": "^4.7.0",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
